@@ -9,7 +9,7 @@ $(function () {
 
     // wallet new
     $("body").on('click', '#fn-wallet-new', function () {
-        callRPC("getnewaddress", []);
+        callRPC("createwallet", []);
     });
 
     // wallet check
@@ -19,7 +19,7 @@ $(function () {
             alert("no wallet address")
             return;
         }
-        callRPC("checkwallet", [wallet_address]);
+        callRPC("validateaddress", [wallet_address]);
     });
 
     // balance

@@ -85,16 +85,6 @@
                         </div>
                         <div id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0-tab" class="tab-pane fade">
                             <p>
-                                <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Required</font></font></b>
-                            </p>
-                            <table class="table table-striped table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You need to open the wallet in the NEO-CLI node before executing this command.</font></font></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>
                                 <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Request parameter</font></font></b>
                             </p>
                             <table class="table table-striped table-bordered">
@@ -110,24 +100,26 @@
                             <table class="table table-striped table-bordered">
                                 <tbody>
                                     <tr>
+                                        <td>address</td>
                                         <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wallet address</font></font></td>
-
+                                    </tr>
+                                    <tr>
+                                        <td>privateKey</td>
+                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Private key (secret key)</font></font></td>
+                                    </tr>
+                                    <tr>
+                                     <td>WIF</td>
+                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WIF</font></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td>publicKey</td>
+                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Public key (public key)</font></font></td>
                                     </tr>
                                 </tbody>
                             </table>
                             <button id="fn-wallet-new" class="btn btn-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Execution</font></font></button>
                         </div>
                         <div id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab" class="tab-pane fade">
-                            <p>
-                                <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Required</font></font></b>
-                            </p>
-                            <table class="table table-striped table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-warning"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You need to open the wallet in the NEO-CLI node before executing this command.</font></font></td>
-                                    </tr>
-                                </tbody>
-                            </table>
                             <p>
                                 <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Request parameter</font></font></b>
                             </p>
@@ -152,6 +144,11 @@
                             <table class="table table-striped table-bordered">
                                 <tbody>
                                     <tr>
+                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">address</font></font></td>
+                                        <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wallet address</font></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td>isvalid</td>
                                         <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Address validity</font></font></td>
                                     </tr>
                                 </tbody>
@@ -516,7 +513,7 @@
                 <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">node</font></font></b>
             </p>
 
-            <input id="pm-node" type="text" class="form-control" value="https://4d6b097f.ngrok.io">
+            <input id="pm-node" type="text" class="form-control" value="https://4d6b097f.ngrok.io/">
             <br>
             <p>
                 <b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">response</font></font></b>
